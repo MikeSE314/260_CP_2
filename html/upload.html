@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- upload.html -->
+<html>
+    <head>
+        <title>Upload | Micheal Erickson</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="resources/images/me_16x16.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="resources/css/bootstrap.css">
+        <link rel="stylesheet" href="resources/css/portfolio.css">
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>
+        <script src="resources/js/portfolio.js"></script>
+        <script src="resources/js/upload.js"></script>
+    </head>
+    <body>
+        <!-- nav -->
+        <!-- Glyphicons made available by https://www.glyphicons.com/ through https://getbootstrap.com/ -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">M.E.</a>-->
+                    <img class="navbar-brand" id="logo" src="resources/images/me_512x512.png">
+                </div>
+                <!-- nav meat -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Home</a> </li>
+                        <li><a href="songs.html"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Songs</a></li>
+                        <li class="active"><a href="upload.html"><span class="glyphicon glyphicon-export" aria-hidden="true"></span> Upload</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <!-- form -->
+                    <form>
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input class="form-control" id="song-title" type="text" placeholder="Enter Title">
+                        </div>
+                        <div class="alert alert-danger" id="song-title-error" role="alert">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="sr-only">Error:</span>
+                            Required Field
+                        </div>
+                        <div class="form-group">
+                            <label>Artist</label>
+                            <input class="form-control" id="song-artist" type="text" placeholder="Enter Artist Name">
+                        </div>
+                        <div class="alert alert-danger" id="song-artist-error" role="alert">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="sr-only">Error:</span>
+                            Required Field
+                        </div>
+                        <div class="form-group">
+                            <label>Album</label>
+                            <input class="form-control" id="song-album" type="text" placeholder="Enter Album Name">
+                        </div>
+                        <div class="alert alert-danger" id="song-album-error" role="alert">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="sr-only">Error:</span>
+                            Required Field
+                        </div>
+                        <button class="btn btn-default" id="song-submit" type="button">Submit</button>
+                    </form>
+                </div>
+                <!-- confirmation alert -->
+                <div class="col-md-6 col-md-offset-3 top-buffer">
+                    <div class="alert alert-success" id="song-add-success" role="alert">
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> <span class="sr-only">Success:</span>
+                        Song Added
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer footer-default">
+            <div class="container-fluid">
+                <p class="center center-words"><span class="contact-head">Find me on Github:</span> <span class="contact-body"><a href="https://github.com/MikeSE314/260_CP_2">Creative Project 2</a></span></p>
+            </div>
+        </footer>
+    </body>
+</html>
