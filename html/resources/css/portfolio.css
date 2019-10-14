@@ -2,6 +2,10 @@
     font-weight: bold;
 }
 
+.greyed {
+    color: grey;
+}
+
 .center {
     margin: auto;
 }
